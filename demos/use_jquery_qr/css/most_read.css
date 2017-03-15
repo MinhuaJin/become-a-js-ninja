@@ -1,0 +1,27 @@
+/* 热门推荐 start*/
+.most-read {width:660px;border-top:2px solid #373737;padding-top:19px;margin:20px 0;}
+.most-read .ptt {font-size:18px;height:20px;line-height:1;padding-left:10px;border-left:5px solid #1976e8;text-align:left;}
+.most-read .item-card {position:relative;padding:20px 0;height:87px;width:auto;border-bottom:1px solid #e5e5e5;}
+.most-read .item-card.no-pic img{display:none;}
+.most-read .item-pic {display:block;float:left;margin-right:19px;width:130px;height:87px;cursor:pointer;}
+/*.most-read .item-text {padding-left:149px;height:87px;}*/
+.most-read .item-text {float:left;height:87px;width:511px;}
+.most-read .item-text h4 {display:block;color:#333;font-size:20px;margin-bottom:6px;text-align:justify;cursor:pointer;}
+.most-read .item-text ul {color:#555;font-size:12px;}
+.most-read .item-text li {display:inline-block;margin-right:10px;cursor:pointer;}
+.most-read .item-card span {position:absolute;right:0;bottom:18px;color:#1976e8;font-size:14px;cursor:pointer;}
+.milky-layer {position:fixed;left:0;top:0;width:100%;height:100%;z-index:9999;background-color:#fff;opacity:0.5;}
+.most-read-popup {position:fixed;z-index:10000;left:50%;top:50%;padding:30px;width:598px;height:378px;margin-top:-220px;margin-left:-330px;border:1px solid #2b9dfc;background-color:#fff;line-height:1.5;overflow:hidden;}
+.most-read-popup .btn-close {position:absolute;z-index:10001;right:0;top:0;width:36px;height:36px;background:url(../images/popup_close.png) center center no-repeat;cursor:pointer;opacity:0.8;}
+.most-read-popup .btn-close:hover {opacity:1;}
+.most-read-popup .item-text {text-align:center;border-bottom:2px dashed #d6dae6;padding-bottom:19px;}
+.most-read-popup .item-text h4 {font-size:24px;line-height:1.2;}
+.most-read-popup .item-text ul {font-size:14px;margin-top:14px;color:#999;line-height:1.5;}
+.most-read-popup .item-text li {display:inline-block;margin:0 10px;}
+.most-read-popup .pop-body {text-align:center;}
+.most-read-popup .pop-body .qr {position:relative;margin-top:35px;padding:20px 0;background:url(../images/qr_frame.png) center center no-repeat;}
+.most-read-popup .pop-body .text {display:inline-block;margin-top:20px;padding-top:17px;width:100%;font-size:16px;color:#1a72d0;background:url(../images/arrow_up.jpg) center top no-repeat;font-weight:bold;}
+.most-read-popup .pop-body .qr table {margin:0 auto;}
+.most-read-popup .pop-body .qr:after {display:block;content:'';position:absolute;top:50%;margin-top:-15px;left:50%;margin-left:-15px;width:30px;height:30px;background-color:red;}
+/*.most-read-popup .pop-body .qr:after{background:url(images/app_logo.png) center center no-repeat;}*/
+/* 热门推荐 end*/

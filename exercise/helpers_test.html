@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>helpers test</title>
+</head>
+<body>
+<div id="parent">
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child special"><div class="grandchild"></div></div>
+    <div class="child"><div class="grandchild"></div></div>
+    <a href="javascript" class="child"></a>
+    <a href=""></a>
+</div>
+<script src="helpers.js"></script>
+<script>
+    var o = {num:1};
+function a(){
+    alert(this.num++);
+}
+var b = ut.bind(a,o);
+
+</script>
+</body>
+</html>

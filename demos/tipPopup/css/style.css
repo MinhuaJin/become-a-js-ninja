@@ -1,0 +1,82 @@
+/* 初始化CSS */
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img{margin:0;padding:0;}
+fieldset,img{border:none;}
+address,caption,cite,code,dfn,th,var{font-style:normal; font-weight:normal;}
+ul,ol{list-style:none;}
+select,input{vertical-align:middle;}
+select,input,textarea{font-size:12px;margin:0;}
+table{border-collapse:collapse;}
+body{background:#fff;color:#333;font:12px/22px 'Microsoft Yahei','微软雅黑','Simsun','宋体','Arial';}
+/* 页面通用部分 */
+.clearfix:after{content:".";display:block;height:0;visibility:hidden;clear:both;}
+.clearfix{zoom:1;}
+.clearit{clear:both;height:0;font-size:0;overflow:hidden;}
+a{color:#1f3b7b;text-decoration:none;}
+a:visited{color:#6079b2;}
+a:hover,a:active,a:focus{color:#8d0000;text-decoration:underline;}
+
+.tp-wrap{position:fixed;z-index:999;top:100px;left:100px;width:300px;border-radius:3px;font-size:16px;line-height:24px;text-align:justify;color:#fff;background-color:#2C2C31;-webkit-box-shadow: 2px 2px 10px rgba(0,0,0,.5);-moz-box-shadow: 2px 2px 10px rgba(0,0,0,.5);box-shadow: 2px 2px 10px rgba(0,0,0,.5);}
+.tp-cont{padding:5px 10px;}
+.tp-wrap.bubble{position:absolute;left:50%;margin-left:-150px;-webkit-animation:slideInUp 0.3s both;animation:slideInUp 0.3s both;}
+.tp-wrap.bubble.up .tp-cont:after{display:block;content:'';position:absolute;top:auto;bottom:-8px;left:50%;margin-left:-4px;border-left:8px solid transparent;border-right:8px solid transparent;border-top:8px solid #2C2C31;border-bottom:none;}
+.tp-wrap.bubble.down .tp-cont:after{display:block;content:'';position:absolute;top:-8px;bottom:auto;left:50%;margin-left:-4px;border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:8px solid #2C2C31;border-top:none;}
+.tp-cont img{display:block;width:80px;height:80px;}
+.icon-help{margin-bottom:200px;width:400px;font-size:28px;line-height:80px;height:80px;background:#3e9138;margin-left:300px;text-align:center;}
+@-webkit-keyframes slideInUp {
+    from {
+        -webkit-transform: translate3d(0, 20px, 0);
+        transform: translate3d(0, 20px, 0);
+        visibility: visible;
+        opacity: 0.5;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+@keyframes slideInUp {
+    from {
+        -webkit-transform: translate3d(0, 20px, 0);
+        transform: translate3d(0, 20px, 0);
+        visibility: visible;
+        opacity: 0.5;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slideInDown {
+    from {
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+        visibility: visible;
+        opacity: 0.5;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+@keyframes slideInDown {
+    from {
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+        visibility: visible;
+        opacity: 0.5;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+.fade-slide-down {-webkit-animation-name: slideInDown;animation-name: slideInDown;}
